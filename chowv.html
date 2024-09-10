@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chow V</title>
+    <meta charset="UTF-8">
+    <style>
+        .header h1{
+            margin-top: 0;
+        }
+        .header {
+            padding: 10px;
+        }
+        .block{
+            padding: 10px;
+            position: relative;
+        }
+        .title{
+            background-color: #65a9e1;
+            color: #2b4b9e;
+            line-height: 30px;
+            font-size: 20px;
+        }
+        .image {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            z-index: 1;
+        }
+        .style1{
+           color: #2b4b9e;
+        }
+        .style2{
+            color: #2b4b9e;
+        }
+        .blue{
+            color: blue;
+        }
+        .font1{
+            font-family:'Courier New', Courier, monospace;
+            font-size: small;
+        }
+        .font2{
+            font-family:'Courier New', Courier, monospace;
+            font-size: small;
+        }
+        .font{
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Chow V</h1>
+        </div>
+        <div class="block">
+            <div class="title"><b>About</b></div>
+            <div class="content">
+                <p>Meow Meow!!!</p>
+                <p>Hi, I'm Chow V. I love <span class="blue"><b>everyone.</b></span></p>
+                <img src="https://i.pinimg.com/564x/f7/37/0f/f7370fb06b911cf3817da25819d5ecd0.jpg" alt="" class="image" width="300" height="224">
+            </div>
+        </div>
+        <div class="block">
+            <div class="title"><b>Courses</b></div>
+            <div class="content">
+                <p>Here are some courses I've taken:</p>
+                <table border="1" width = "450"  cellspacing="0">
+                    <tr>
+                        <td><b>Course Number</b></td>
+                        <td><b>Course Title</b></td>
+                        <td><b>Semester Taken</b></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="text-align: center;"><b>For Credit</b></td>
+                    </tr>
+                    <tr>
+                        <td class="style1"><b>6.813</b></td>
+                        <td class="style2">User Interface Design</td>
+                        <td class="style2">Spring 2014</td>
+                    </tr>
+                    <tr>
+                        <td class="style1"><b>6.034</b></td>
+                        <td>Artificial Intelligence</td>
+                        <td>Fall 2013</td>
+                    </tr>
+                    <tr>
+                        <td class="style1"><b>6.006</b></td>
+                        <td>Introduction to Algorithms</td>
+                        <td>Fall 2013</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="text-align: center;"><b>Listener</b></td>
+                    </tr>
+                    <tr>
+                        <td class="style1"><b>6.867</b></td>
+                        <td>Machine Learning</td>
+                        <td>Fall 2013</td>
+                    </tr>
+                    <tr>
+                        <td class="style1"><b>6.830</b></td>
+                        <td>Database Systems</td>
+                        <td>Fall 2012</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="block">
+            <div class="title"><b>Interests</b></div>
+            <div class="content">
+                <p>I am interested <span class="font">memes	</span>, <span class="font1"><b>memes</b></span>, and <span class="font2"><b>youtube videos</b></span>.</p>
+            </div>
+        </div>
+        <div class="block">
+            <div class="title"><b>Submit Pet Information</b></div>
+            <div class="content">
+                <p>Would love to know what kinds of pets you 'own' (you'll never own me). Submit below!</p>
+                <form action="/action_page.php">
+                    <label for="fname">Name:</label>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Phylum:</label>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="lname">Gender:</label>
+                    <input type="text" id="lname" name="lname"><br>
+                    <input type="submit" value="Submit"><br>
+                  </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
