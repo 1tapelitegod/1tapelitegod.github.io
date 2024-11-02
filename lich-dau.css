@@ -1,0 +1,292 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+.div_tren {
+  position: sticky;
+  top: 0;
+  background-color: red;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo img {
+  width: 104px;
+  height: 107px;
+}
+
+.title {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.div_ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  height: 50px;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 20px;
+  font-size: 18px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #ff6666;
+}
+
+nav ul li a.active {
+  background-color: #ff9999;
+}
+
+
+.menu-button {
+  display: none;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 400px;
+  width: 250px;
+  background-color: rgba(72, 2, 2, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+  padding: 10px 20px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  
+  .div_ul ul .hideOnMobile {
+    display: none;
+  }
+
+  
+  .menu-button {
+    display: block;
+    margin-right: 20px;
+  }
+
+  
+  .sidebar {
+    display: none;
+  }
+}
+
+.main {
+  margin-top: 120px; /* Add a top margin to avoid content overlay */
+}
+.header {
+  background-color: #c20000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.schedule-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.round-title {
+  background-color: #c20000;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.match-day {
+  padding: 10px;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 0.9em;
+}
+
+.team-logo {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+
+.broadcast, .attendance {
+  color: #666;
+  font-size: 0.85em;
+}
+
+
+@media (max-width: 768px) {
+  .table, .table th, .table td {
+      display: block;
+      width: 100%;
+      text-align: left;
+  }
+
+  .table th, .table td {
+      padding: 8px;
+      border: none;
+      position: relative;
+  }
+
+  .table td {
+      padding-left: 50%;
+      text-align: right;
+  }
+
+  .table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 10px;
+      font-weight: bold;
+      text-align: left;
+  }
+
+  .team-logo {
+      width: 20px;
+      height: 20px;
+      margin: 0 3px;
+  }
+
+  .round-title {
+      font-size: 1em;
+  }
+
+  .match-day {
+      font-size: 0.9em;
+  }
+}  
+
+footer {
+  background-color: red;
+  padding: 0 0;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  }
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+.social-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.facebook-icon {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.youtube-icon {
+background-color: #ffffff;
+color: #ff0000;
+}
+.footer-links {
+  background-color: #1a1a1a;
+  padding: 10px 0;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
